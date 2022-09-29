@@ -2,12 +2,10 @@ package ru.netology.delivery.data;
 
 import com.github.javafaker.Faker;
 import lombok.Value;
-import lombok.val;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
-import java.util.Random;
 
 public class DataGenerator {
     private DataGenerator() {
@@ -47,7 +45,7 @@ public class DataGenerator {
         public static UserInfo generateUser(String locale) {
             // TODO: добавить логику для создания пользователя user с использованием методов generateCity(locale),
             // generateName(locale), generatePhone(locale)
-            return new UserInfo(generateCity(locale),generateName(locale),generatePhone(locale));
+            return new UserInfo(generateCity(locale), generateName(locale), generatePhone(locale));
         }
     }
 
